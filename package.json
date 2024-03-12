@@ -1,0 +1,17 @@
+{
+  "name": "fulu-create-file",
+  "version": "1.0.5",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access public"
+  },
+  "keywords": [
+    "fulu",
+    "create",
+    "file"
+  ],
+  "author": "fulu-create-file",
+  "license": "MIT"
+}
