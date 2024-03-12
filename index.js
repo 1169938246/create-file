@@ -94,14 +94,11 @@ const updateModelsIndex = () => {
     let index = data.indexOf('app.start') ; 
     const newData = [data.slice(0, index), insertText, data.slice(index)].join('');
     fs.writeFileSync('./src/index.js', newData, 'utf8');
-    console.log(`在index.js中插入models成功`);
-
 };
 
 //更新models.js文件
 const updateModelsFile = (filePath,text) => {
     fs.writeFileSync(filePath,`${text}`);
-    console.log(`在 ${filePath} 中创建文件成功, ${__dirname}`);
 };
 
 
@@ -169,7 +166,7 @@ const createFn = async() =>{
                  fs.writeFileSync(filePath,`${text}`);
             }
             
-            // console.log(`在${filePath}中创建成功js`)
+            console.log(`在${filePath}中创建成功js`)
         }
     });
     
